@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REstate - Modern Real Estate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">REstate</a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-headline anim-slide-up">Find Your Dream Home Today</h1>
+                <p class="hero-subheadline anim-slide-up">The perfect place to find the property that suits you.</p>
+                <a href="#search" class="cta-button anim-slide-up">Start Exploring</a>
+            </div>
+        </section>
+
+        <!-- Search/Filter Bar -->
+        <section id="search" class="search-section anim-slide-up">
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="City, State, Zip Code">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price Range</label>
+                    <input type="text" id="price" placeholder="$100,000 - $500,000">
+                </div>
+                <div class="form-group">
+                    <label for="type">Property Type</label>
+                    <select id="type">
+                        <option value="any">Any</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </section>
+
+        <!-- Property Listings -->
+        <section id="listings" class="listings-section anim-slide-up">
+            <h2 class="section-title">Available Properties</h2>
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" 
+                     data-title="Modern Villa"
+                     data-price="$450,000"
+                     data-description="A beautiful modern villa with a spacious garden and pool, located in a serene suburban neighborhood. Perfect for families looking for comfort and luxury."
+                     data-beds="4"
+                     data-baths="3"
+                     data-sqft="2,500"
+                     data-images="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Modern Villa">
+                        <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Modern Villa</h3>
+                        <p class="property-address">123 Luxury Lane, Suburbia</p>
+                        <p class="property-price">$450,000</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+                <!-- Property Card 2 -->
+                <div class="property-card"
+                     data-title="Cozy Apartment"
+                     data-price="$220,000"
+                     data-description="A cozy apartment in the city center, perfect for singles or couples. Features modern amenities and stunning city views from the 15th floor."
+                     data-beds="2"
+                     data-baths="2"
+                     data-sqft="1,200"
+                     data-images="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Cozy Apartment">
+                        <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Cozy Apartment</h3>
+                        <p class="property-address">456 Urban St, Downtown</p>
+                        <p class="property-price">$220,000</p>
+                         <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+                <!-- Property Card 3 -->
+                <div class="property-card"
+                     data-title="Suburban House"
+                     data-price="$350,000"
+                     data-description="A charming suburban house with a large backyard for your family. This home features a newly renovated kitchen and a two-car garage."
+                     data-beds="3"
+                     data-baths="2"
+                     data-sqft="1,800"
+                     data-images="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1600607687939-ce8a69d62d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1600585153337-34a62d75159c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Suburban House">
+                         <div class="property-status rented">Rented</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Suburban House</h3>
+                        <p class="property-address">789 Quiet Rd, Greenfield</p>
+                        <p class="property-price">$350,000</p>
+                         <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+                <!-- Property Card 4 -->
+                <div class="property-card"
+                     data-title="Downtown Loft"
+                     data-price="$310,000"
+                     data-description="A stylish loft in a converted warehouse. Features high ceilings, exposed brick, and a modern industrial design."
+                     data-beds="1"
+                     data-baths="1"
+                     data-sqft="950"
+                     data-images="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1600585152915-d208bec867a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Downtown Loft">
+                         <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Downtown Loft</h3>
+                        <p class="property-address">101 Factory Pl, Metro City</p>
+                        <p class="property-price">$310,000</p>
+                         <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 950 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+                <!-- Property Card 5 -->
+                 <div class="property-card"
+                     data-title="Countryside Cottage"
+                     data-price="$180,000"
+                     data-description="A charming cottage surrounded by nature. Perfect for a peaceful retreat away from the city."
+                     data-beds="2"
+                     data-baths="1"
+                     data-sqft="1,100"
+                     data-images="https://images.unsplash.com/photo-1588880331179-b0b54b8acb03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1556912173-3c7a9c9f3c7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1588880331179-b0b54b8acb03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Countryside Cottage">
+                         <div class="property-status sold">Sold</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Countryside Cottage</h3>
+                        <p class="property-address">23 Forest Creek, Rural Valley</p>
+                        <p class="property-price">$180,000</p>
+                         <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,100 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+                 <!-- Property Card 6 -->
+                <div class="property-card"
+                     data-title="Luxury Sky-Rise"
+                     data-price="$2,150,000"
+                     data-description="The pinnacle of luxury living. This sky-rise apartment offers breathtaking panoramic views of the city."
+                     data-beds="5"
+                     data-baths="6"
+                     data-sqft="4,500"
+                     data-images="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1542314831-068cd1dbb5ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Luxury Sky-Rise">
+                         <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-title">Luxury Sky-Rise</h3>
+                        <p class="property-address">777 Celestial Ave, Skyview</p>
+                        <p class="property-price">$2,150,000</p>
+                         <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 6 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4,500 sqft</span>
+                        </div>
+                        <a href="#" class="details-button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Carousel -->
+        <section id="featured" class="featured-section anim-slide-up">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Featured Property 1 -->
+                    <div class="featured-card">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Luxury Penthouse">
+                        <div class="featured-content">
+                            <h4>Luxury Penthouse</h4>
+                            <p>$1,200,000</p>
+                        </div>
+                    </div>
+                    <!-- Featured Property 2 -->
+                    <div class="featured-card">
+                        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Beachfront Property">
+                        <div class="featured-content">
+                            <h4>Beachfront Property</h4>
+                            <p>$850,000</p>
+                        </div>
+                    </div>
+                    <!-- Featured Property 3 (Duplicate for infinite scroll) -->
+                    <div class="featured-card">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Luxury Penthouse">
+                        <div class="featured-content">
+                            <h4>Luxury Penthouse</h4>
+                            <p>$1,200,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section anim-slide-up">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <p>"REstate helped me find my dream home in just a few weeks. The process was smooth and the agents were incredibly helpful."</p>
+                        <h4>- Jane Doe</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"I couldn't be happier with my new apartment. The listings were accurate and the team was professional throughout."</p>
+                        <h4>- John Smith</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"A fantastic experience from start to finish. Highly recommend REstate for anyone looking to buy or sell property."</p>
+                        <h4>- Emily White</h4>
+                    </div>
+                </div>
+                 <div class="testimonial-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section anim-slide-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Property Detail Modal -->
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img id="main-modal-image" src="" alt="Property Image">
+                    <div class="thumbnail-container">
+                        <!-- Thumbnails will be injected by JS -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-price"></p>
+                    <p id="modal-description"></p>
+                    <div id="modal-meta" class="property-meta">
+                        <!-- Meta info will be injected by JS -->
+                    </div>
+                    <h3>Amenities</h3>
+                    <ul id="modal-amenities" class="amenities-list">
+                        <li><i class="fas fa-check-circle"></i> Swimming Pool</li>
+                        <li><i class="fas fa-check-circle"></i> Private Garage</li>
+                        <li><i class="fas fa-check-circle"></i> Home Theater</li>
+                        <li><i class="fas fa-check-circle"></i> Smart Home Automation</li>
+                    </ul>
+                    <h3>Contact Agent</h3>
+                    <a href="#contact" class="cta-button">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#" class="logo">REstate</a>
+                <p>&copy; 2025 REstate. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#listings">Listings</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
